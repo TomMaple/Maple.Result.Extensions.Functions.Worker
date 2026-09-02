@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>Maple.Result.Extensions.Functions.Worker</AssemblyName>
+
+    <PackageId>Maple.Result.Extensions.Functions.Worker</PackageId>
+    <Title>Provides mapping of the Maple.Result to the Azure Functions isolated worker HttpResponseData.</Title>
+    <Description>Provides mapping of the Maple.Result to the Azure Functions isolated worker HttpResponseData.</Description>
+    <Authors>Tom Maple</Authors>
+    <PublisherName>Tom Maple</PublisherName>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageTags>Result;Error;RFC-9457;RFC-7807;AzureFunctions;Azure Functions;isolated worker model</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+    <PackageProjectUrl>https://github.com/TomMaple/Maple.Result.Extensions.Functions.Worker</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/TomMaple/Maple.Result.Extensions.Functions.Worker</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <IsAotCompatible>true</IsAotCompatible>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Maple.Result" Version="2.8.0" />
+    <PackageReference Include="Microsoft.Azure.Functions.Worker.Core" Version="2.52.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Maple.Result.Extensions.Functions.Worker.Tests.Unit" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE" Pack="true" PackagePath="" />
+    <None Include="..\..\README.md" Pack="true" PackagePath="" />
+  </ItemGroup>
+
+</Project>

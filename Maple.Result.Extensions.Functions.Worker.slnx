@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/docs/">
+    <File Path="LICENSE" />
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/Maple.Result.Extensions.Functions.Worker/Maple.Result.Extensions.Functions.Worker.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Maple.Result.Extensions.Functions.Worker.Tests.Functional/Maple.Result.Extensions.Functions.Worker.Tests.Functional.csproj" />
+    <Project Path="tests/Maple.Result.Extensions.Functions.Worker.Tests.Unit/Maple.Result.Extensions.Functions.Worker.Tests.Unit.csproj" />
+  </Folder>
+</Solution>
