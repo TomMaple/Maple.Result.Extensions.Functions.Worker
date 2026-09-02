@@ -1,0 +1,25 @@
+<Solution>
+  <Folder Name="/.github/" />
+  <Folder Name="/.github/workflows/">
+    <File Path=".github/workflows/build-and-publish.yml" />
+  </Folder>
+  <Folder Name="/.resources/">
+    <File Path=".resources/icon.png" />
+  </Folder>
+  <Folder Name="/docs/">
+    <File Path="LICENSE" />
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path=".gitignore" />
+    <File Path="global.json" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/Maple.Result.Extensions.Functions.Worker/Maple.Result.Extensions.Functions.Worker.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Maple.Result.Extensions.Functions.Worker.Tests.Functional/Maple.Result.Extensions.Functions.Worker.Tests.Functional.csproj" />
+    <Project Path="tests/Maple.Result.Extensions.Functions.Worker.Tests.Unit/Maple.Result.Extensions.Functions.Worker.Tests.Unit.csproj" />
+  </Folder>
+</Solution>
